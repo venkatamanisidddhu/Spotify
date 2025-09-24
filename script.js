@@ -6,6 +6,7 @@ const songMetadata = [
     { file: "Starboy.mp3", title: "Starboy", artist: "The Weeknd", img: "img/starboy.jpeg" },
 ];
 
+
 const supabase = window.supabase.createClient(
     import.meta.env.VITE_SUPABASE_URL,
     import.meta.env.VITE_SUPABASE_ANON_KEY
