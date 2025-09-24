@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+    <main>
+        <div class="nav">
+            <div class="nav-left">
+                <img src="icons/menu.svg" alt="menu" id="menu">
+                <img src="icons/logo.svg" class="logo" alt="spotify-logo">
+            </div>
+            <ul>
+                <li><a href="#home" class="home"><img src="icons/home.svg" alt="home" class="logo"></a></li>
+                <div class="search">
+                    <img src="icons/search.svg" alt="search" class="logo logo-search">
+                    <input type="text" class="search-input" id="search" placeholder="What do you want to play?">
+                </div>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="left">
+                <div class="left-container">
+                    <div class="library-head">
+                        <img src="icons/library.svg" class="logo logo-library" alt="">
+                        <h3>Your Library</h3>
+                    </div>
+                    <div class="left-cards">
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="cards-container">
+                    <div class="head-content">
+                        <span>Made For You</span>
+                    </div>
+                    <div class="cards">
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="player-card">
+
+            <div class="leftSongCard">
+                <img src="img/unknown.jpeg" alt="Songcard">
+                <div class="songDetails">
+                    <span class="songName">Unknown</span>
+                    <span class="ArtistName">Artist • Unknown</span>
+                </div>
+            </div>
+
+            <div class="playerBar">
+                <div class="playBtns">
+                    <img src="icons/play-left.svg" alt="left" class="play-lr previous" id="playLR">
+                    <div class="playBtn">
+                        <img src="icons/play.svg" class="playChange" alt="play">
+                    </div>
+                    <img src="icons/play-right.svg" alt="right" class="play-lr next" id="playLR">
+                </div>
+
+                <div class="SeekBarContent">
+                    <span class="CurrentSec time">00:00</span>
+                    <div class="seekbar">
+                        <div class="seekbarProgress"></div>
+                        <div class="Circle"></div>
+                    </div>
+                    <span class="Duration time">00:00</span>
+                </div>
+
+            </div>
+
+
+            <div class="volumeBar">
+                <img src="icons/volume.svg" class="volumeBtn" alt="volume">
+                <div class="volumeSeekbar">
+                    <input type="range" name="volume" value="100" id="volume">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>
