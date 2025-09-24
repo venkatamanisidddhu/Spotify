@@ -7,13 +7,7 @@ const songMetadata = [
 ];
 
 
-import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
-
-const supabase = createClient(
-    import.meta.env.VITE_SUPABASE_URL,
-    import.meta.env.VITE_SUPABASE_ANON_KEY
-);
-
+const supabase = window.supabase.createClient("https://bhrqkoamoxpdwsqizyhq.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJocnFrb2Ftb3hwZHdzcWl6eWhxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgxODEzNzAsImV4cCI6MjA3Mzc1NzM3MH0.CVmUHDkj6FGCywlkwTvZhzuag-cHxPO1STc_Qw2-YjA")
 
 let songs = []
 
